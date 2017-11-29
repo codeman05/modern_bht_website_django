@@ -1,0 +1,44 @@
+/*******
+Navigation
+*******/
+.navbar {
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    z-index: 2;
+    background-color: rgba(51,51,51,0.9);
+}
+.brand,
+.navbar a {
+    color: rgb(255,255,255);
+}
+.brand {
+    margin-left: 40px;
+}
+.navbar-nav {
+    margin-right: 60px;
+}
+.nav-item {
+    padding-right: 15px;
+}
+
+/*******
+Slideshow
+*******/
+.slideshow-container {
+    padding: 0 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+.swiper-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/* Test */
+body {
+    min-height: 3000px;
+}
+
