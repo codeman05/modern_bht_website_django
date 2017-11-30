@@ -30,6 +30,19 @@ Navigation
 }
 
 /**************
+About Us
+**************/
+.about-us {
+    padding: 40px 40px;
+}
+.featured-image {
+    max-width: 90%;
+    max-height: auto;
+    /*border: dashed red 1px;*/
+}
+
+
+/**************
 Slideshow
 **************/
 .slideshow-container {
@@ -68,7 +81,6 @@ Footer
     padding-top: 20px;
 }
 
-
 /**************
 Copyright
 **************/
@@ -80,7 +92,6 @@ Copyright
 .social-link {
     margin-right: 7.5px;
 }
-
 
 /**************
 Colors
