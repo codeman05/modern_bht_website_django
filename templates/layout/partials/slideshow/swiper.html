@@ -1,29 +1,32 @@
-<div class="container-fluid slideshow-container">
+{% load static %}
+<div class="container-fluid section slideshow-container">
+    <h2 class="section-title text-center">Upcoming Events</h2>
+
     <!-- Slider main container -->
     <div class="swiper-container">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <img src="http://lorempixel.com/1920/500/" class="" alt="demo">
-                Slide 1
+                <img class="img-responsive slide" src="{% static 'img/ashrae_chicago2.png' %}" class="" alt="demo">
             </div>
-            <div class="swiper-slide">Slide 2
-                <img src="http://lorempixel.com/1920/500/" alt="demo">
+            <div class="swiper-slide">
+                <img class="img-responsive slide" src="{% static 'img/ashrae_houston.png' %}" alt="demo">
             </div>
-            <div class="swiper-slide">Slide 3
-                <img src="http://lorempixel.com/1920/500/" alt="demo">
+            <div class="swiper-slide">
+                <img class="img-responsive slide" src="{% static 'img/inda2018.png' %}" alt="demo">
             </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- End Swiper Pagination -->
+
+        <!-- Swiper Arrows -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <!-- End Swiper Arrows -->
 
         <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!--<div class="swiper-scrollbar"></div>-->
     </div>
 </div>
-

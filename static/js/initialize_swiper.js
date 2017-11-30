@@ -1,21 +1,22 @@
 var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
+    // Settings
+    effect: 'flip',
+    grabCursor: true,
     loop: true,
 
-    // If we need pagination
+    // Pagination settings
     pagination: {
       el: '.swiper-pagination',
     },
 
-    // Navigation arrows
+    // Navigation settings
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }
+    },
 
     // And if we need scrollbar
-    scrollbar{
-      el: '.swiper-scrollbar',
-    },
-})
+    //scrollbar{
+    //  el: '.swiper-scrollbar',
+    //},
+});

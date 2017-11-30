@@ -9,6 +9,14 @@ html {
 body {
     flex: 1;
 }
+.section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.section-title {
+    text-decoration: underline #66a3ff;
+    padding-bottom: 4px;
+}
 
 /**************
 Navigation
@@ -38,28 +46,75 @@ About Us
 .featured-image {
     max-width: 90%;
     max-height: auto;
-    /*border: dashed red 1px;*/
 }
 
+/**************
+Testing Services
+**************/
+.testing-services {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.card-row {
+    width: 90%;
+    margin: auto;
+}
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card img {
+  padding: 20px;
+  height: 305px;
+}
+.card-title {
+  margin-bottom: 30px;
+}
+.card-link,
+.btn {
+  display: block;
+  text-align: center;
+}
+.card-link {
+  margin-bottom: 20px;
+}
+.btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
 
 /**************
-Slideshow
+Upcoming Events Slideshow
 **************/
 .slideshow-container {
-    padding: 0 0;
+    padding: 0 0;   /* Fixes extra left, right space created by Bootstrap */
+    height: 500px;
+}
+.swiper-container {
+    height: 400px;
+    width: 500px;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+/**************
+Employee Slideshow
+**************/
+.employee-slideshow-container {
+    padding: 50px 40px;
 }
 .swiper-container {
     width: 100%;
-    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.swiper-wrapper {
-    height: 100%;
-    width: 100%;
+.swiper-slide {
+    width: 300px;
+    height: 300px;
 }
-
-/* Test */
-
-
 
 /**************
 Footer
@@ -68,14 +123,18 @@ Footer
     height: 380px;
     padding: 20px 60px;
 }
-.contact-info {
-
+.footer-text-emphasis {
+  font-weight: bold;
+  font-size: 1.25em;
 }
 .contact-icon {
     margin-right: 7.5px;
 }
 .footer a {
     text-decoration: none;
+}
+.footer a:hover {
+  font-weight: bold;
 }
 .google-map {
     padding-top: 20px;
@@ -89,27 +148,52 @@ Copyright
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .social-link {
     margin-right: 7.5px;
 }
 
 /**************
-Colors
+Colors & Typography
 **************/
 .navbar,
 .footer {
     background-color: rgba(51,51,51,0.9);
 }
+.navbar {
+    border-bottom: 4px solid #66a3ff;
+}
+.footer {
+  border-top: 4px solid #66a3ff;
+}
 .brand,
 .navbar a {
     color: rgb(255,255,255);
+}
+.employee-slideshow-container {
+    background-color: #f4f4f4;
+}
+.btn-primary {
+  background-color: #1a242f;
+  border-color: #161f29;
+  background-color: rgba(51,51,51,0.8);
+  border-color: #66a3ff;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 1.15em;
+  color: #66a3ff;
+}
+.card-link:hover {
+  color: firebrick;
 }
 .footer-text,
 .footer-link {
     color: rgb(255,255,255);
 }
-.footer-text-emphasis {
-
+.copyright-text {
+  font-size: 0.9em;
 }
 .copyright-container {
     background-color: #66a3ff;
@@ -120,4 +204,15 @@ Colors
 .social-link,
 .contact-icon {
     color: rgb(255,255,255);
+}
+
+
+
+
+/* Test */
+.about-us {
+    margin-top: 100px;
+}
+.card {
+    min-height: 860px;
 }
