@@ -1,7 +1,13 @@
-<div class="container-fluid section contact-us">
+{% load static %}
+{% load crispy_forms_tags %}
+<div class="container-fluid section contact-us" id="contact-us-section">
     <h2 class="section-title">Contact Us</h2>
-    <form method="POST">
-        {% csrf_token %}
-    </form>
 
+    <div class="form-container">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" class="form-control btn btn-primary submit-button" value="Send">
+        </form>
+    </div>
 </div>

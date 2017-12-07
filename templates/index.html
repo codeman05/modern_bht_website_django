@@ -23,10 +23,11 @@
     <!-- End Contact Us-->
 
     <!-- Upcoming Events Slideshow -->
-
+    {% include 'layout/partials/slideshow/upcoming_events.html' %}
     <!-- End Upcoming Events Slideshow -->
 {% endblock %}
 
 {% block scripts %}
     <script src="{% static 'js/employee_slideshow.js' %}"></script>
+    <script src="{% static 'parallax.js-1.5.0/parallax.min.js' %}"></script>
 {% endblock %}

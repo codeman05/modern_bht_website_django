@@ -21,6 +21,7 @@ body {
     text-transform: uppercase;
     text-decoration: underline #66a3ff;
     font-weight: 600;
+    padding-bottom: 10px;
 }
 
 /**************
@@ -90,8 +91,16 @@ Testing Services
 /**************
 Contact Us
 **************/
-
-
+.contact-us {
+    padding: 40px 60px;
+}
+.form-container {
+    width: 70%;
+    margin: auto;
+}
+.submit-button:hover {
+    cursor: pointer;
+}
 
 /**************
 Upcoming Events Slideshow
@@ -167,8 +176,9 @@ Colors & Typography
 .navbar a {
     color: rgb(255,255,255);
 }
-.bht-crew {
+.testing-services {
     background-color: rgba(51,51,51,0.3);
+    /*background-image: url('../img/pexels-photo-287005.jpeg');*/
 }
 .btn-primary {
     background-color: #1a242f;
@@ -181,6 +191,9 @@ Colors & Typography
     font-weight: bold;
     font-size: 1.15em;
     color: #66a3ff;
+}
+.card {
+    border: 1px solid #66a3ff;
 }
 .card-link:hover {
     color: firebrick;

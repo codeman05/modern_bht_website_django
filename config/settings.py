@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'crispy_forms',
+    'config',
+    'contact_forms',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+# Crispy Forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
