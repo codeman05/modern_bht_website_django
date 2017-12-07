@@ -1,3 +1,4 @@
+{% load static %}
 <div class="container-fluid footer">
     <div class="row align-items-center">
         <div class="col align-self-start d-flex justify-content-center">
@@ -9,7 +10,8 @@
                     <span class="footer-text">Louisville, KY 40299</span><br>
                     <a href="tel:+15023570132"><i class="fa fa-phone contact-icon" aria-hidden="true"></i><span class="footer-link">(502) 357-0132</a></span><br>
                     <span class="footer-text"><i class="fa fa-fax contact-icon" aria-hidden="true"></i>(502) 357-0132</span><br>
-                    <a href="mailto:info@blueheaventech.com"><i class="fa fa-envelope contact-icon" aria-hidden="true"></i><span class="footer-link">info@blueheaventech.com</a></span>
+                    <a href="mailto:info@blueheaventech.com"><i class="fa fa-envelope contact-icon" aria-hidden="true"></i><span class="footer-link">info@blueheaventech.com</a></span><br>
+                    <a href="{% static 'forms/test_request_form_april_2017.xlsx' %}" target="_blank"><i class="fa fa-file-excel-o contact-icon" aria-hidden="true"></i><span class="footer-link">Test Request Form</a></span>
                 </address>
             </div>
             <!-- End Contact Information -->
